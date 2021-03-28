@@ -1,0 +1,611 @@
+* 
+{
+	
+    /*box-sizing: border-box;*/
+	font-family: Arial, sans-serif;
+}
+/*making links the same coloured*/
+a, a:visited, a:link
+{
+	text-decoration:none;
+	color:black;
+	font-weight:700;
+}
+/*changing link colour on hover*/
+a:hover
+{
+	color:#55868C;
+}
+
+body
+{
+	padding:0;
+	margin:0;
+	width:100%;
+	
+	/*it is set to relative so any absolute positioned element will be relative to this*/
+	
+	position:relative;
+}
+
+#conainer
+{
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+.outer{
+	width:100%;
+}
+
+.inner
+{	max-width: 1200px;	padding: 4% 15%;	
+	
+	/*center aligning the inner divs*/
+		margin: 0px auto;
+}
+
+.gameContainer
+{
+	width: 966px;
+	margin:0px auto;
+	/* min-height: 2000px; */
+}
+
+div.col-50
+{
+	width: 40%;
+	/*so that they will float next to each other, but without the "float:left" property, so the container div will have height */
+	display:inline-block;
+	padding:4%;
+	margin:0px auto;
+	/* height: 100%; */
+}
+
+#navigation h2
+{
+	font-size:13px;
+	display:inline-block;
+	margin:0;
+	padding:0;
+}
+
+h1
+{
+	font-size:64px;
+}
+
+h2
+{
+	font-size: 51px;
+}
+
+h3
+{
+	font-size:38px;
+}
+
+p, ul, li
+{
+	font-size:25px;
+	line-height:31px;
+}
+
+p
+{
+	text-align: justify;
+}
+/*colouring the background of each div */
+.outer.grey
+{
+	background-color:#F5F5F5;	
+}
+
+.outer.blue
+{
+	background-color:#F5F5F5;	
+}
+
+.outer.white
+{
+	background-color:white;	
+}
+
+.outer.red
+{
+	background: linear-gradient(135deg, #39398F, #EE5134);	
+	color:#eeeeee;		
+}
+
+.outer.blue
+{
+	background-color: #9CF6F6;	
+	color:#333333;	
+}
+
+.outer.orange
+{
+	background-color: #F3C98B;	
+	color:#333333;	
+}
+
+#footer
+{	
+	/*fixed position, so it is always at the bottom of the screen regardless of the position within the page*/
+	position:fixed;
+	z-index:99999;
+	bottom:0px;
+	background-color:#222222;
+	height:60px;
+	color:white;
+	font-size:21px;
+	/* padding: 0px 0px 8px; */
+	opacity:0.9;
+	border-top: 1px solid #333333;
+}
+
+#footer_inner
+{
+	text-align:center;
+	padding: 5px 0px;
+}
+
+.standingValue.orange
+{
+	color: orange;
+}
+
+.standingValue.green
+{
+	color: #C4FFB2;
+}
+
+.outer.dark
+{
+	background-color:black;
+	color:#eeeeee;
+}
+
+#mainCanvas
+{
+	border: 1px solid black;
+}
+
+#selectorDiv, #letsPlayDiv
+{
+	margin-bottom:13px;
+}
+
+.fb-like
+{
+	/*positioning the fb-like button from its original postition, so it won't look awkward*/	
+	position:relative;
+	left:10px;
+}
+
+#navigationContainer
+{
+	/* setting the navigation container's position to fixed, to it will always be at the top of the screen*/
+	position:fixed;
+	width:100%;
+	background-color: white;
+	border-bottom: 1px solid #333333;
+	z-index: 1000;
+	opacity:0.8;
+}
+
+#navigation
+{
+	margin:0px auto;
+	padding: 0 15%;
+	background color:white;
+	min-height: 55px;
+	background-color:white;
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+#navigation ul
+{
+	float:right;
+	margin: 7px;
+}
+
+#navigation ul li
+{
+	/*removing the list-style, so it won't actually look like an li element*/
+	list-style:none;
+	margin-left: 10px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+#navigation ul li a
+{
+	text-decoration:none;
+}
+
+#homeLogo
+{
+	width:200px;
+	display:inline-block;
+	margin-top: 7px;
+}
+
+#navigation h1
+{
+	font-size:21px;
+	display:inline-block;
+	margin:0;
+	padding:0;
+}
+
+#actionBlockInner h4
+{
+	color:white;
+	font-size:21px;
+}
+
+h3
+{
+	text-align:center;
+}
+
+h5
+{
+	text-align:center
+}
+
+.left
+{
+	width:700px;
+}
+
+.right
+{
+	width: 262px;
+}
+
+.gameHeader
+{
+	float:left;
+	text-align:center;
+	padding:10px 0px;
+	font-size:20px;
+	border: 1px solid #bbbbbb;
+	min-height: 45px;
+}
+
+#statusFeed
+{
+	width:262px;
+	height: 550px;
+	display:inline-block;
+	background-color:white;
+	border: 1px solid #bbbbbb;
+	/* float:left; */
+	overflow:scroll;
+}
+
+div.feedMessage
+{
+	font-size: 18px;
+	border: 1px solid #bbbbbb;
+	font-weight: 500;
+	background-color: #F5FBA7;
+	margin: 10px 10px;
+	min-height:120px;
+	/*making the corners a bit rounded*/
+	border-radius:10px;
+}
+
+/* background colours for the status messages of the statusfeed which are next to the game*/
+
+div#statusFeed div.green
+{
+	background-color:#9CF6F6;
+}
+
+div#statusFeed div.orange
+{
+	background-color:#F3C98B;
+}
+
+
+
+div#statusFeed div.red
+{
+	background-color:#C9B1BD;
+}
+
+div#statusFeed div.blue
+{
+	background-color:#9CF6F6;
+}
+
+div.singleMessage
+{
+	min-height:96px;
+}
+
+div.singleMessage, div.timeStamp
+{
+	margin:7px;
+}
+
+#gameArea
+{
+	display:inline-block;
+	float: left;
+}
+
+/*changing the cursor to pointer when the user hovers the cursor above a button in the game*/
+
+.pointer
+{
+	cursor:pointer;
+}
+.col-50 img
+{
+	max-height:400px;
+	width:auto;
+}
+
+.huge
+{
+	font-size:40px;
+}
+/*the rounded red shape containing the game starting buttons and the deck selector dropdown*/
+#actionBlock
+{
+	position:fixed;
+	right:-150px;
+	top:25%;
+	width:200px;
+	height:200px;
+	background-color:red;
+	border-radius:200px;
+	padding:100px 50px;
+	border:1px solid black;
+}
+
+button
+{
+	border-radius:10px;
+	padding:10px;
+	background-color:white;
+}
+
+select
+{
+	padding:5px;
+	border-radius:10px;
+}
+
+option
+{
+	padding:5px;
+	border-radius:10px;
+}
+
+.table_column
+{
+	width:32px;
+	display: table-cell;
+}
+
+.table_cell
+{
+	background-color:white;
+	display:inline-block;
+	width:30px;
+	height:30px;
+	text-align:center;
+	border:1px solid black;
+}
+
+#simulation
+{
+	margin-bottom:71px;
+	position:relative;
+}
+
+#table_1
+{
+	margin-bottom:71px;
+}
+
+#simulationSettings
+{
+	display:none;
+	min-height:1000px;
+}
+/* the formatting for the setting boxes of the simulation settings are defined here*/
+
+.simulationFormElement
+{
+	margin: 0px 50px 31px 50px;
+	width:300px;
+	float:left;
+	font-size:16px;
+	text-align:center;
+	min-height:150px;
+	border-bottom:1px dotted black;
+}
+
+.simulationFormElement p 
+{
+	font-size:13px;
+	text-align:center;
+}
+
+.simulationFormElement h3
+{
+	font-size:21px;
+}
+
+.editable
+{
+	width:25px;
+	height:25px;
+	text-align:center;
+}
+/* The colours for the user defined table's cells. The class name is the same as the abbreviated action name.
+i.e.: h:hit, s: stand, r:surrender and so on...
+*/
+.h
+{
+	background-color:#00FFFF;
+}
+
+.s
+{
+	background-color:#8FBC8F;
+}
+
+.r{
+	background-color:#F08080;
+}
+
+.d
+{
+	background-color:#FF7F50;
+}
+
+.rh
+{
+	background-color:#F08080;
+}
+
+.rs
+{
+	background-color:#DAA520;
+}
+
+.dh
+{
+	background-color:#DCDCDC;
+}
+
+.ds
+{
+	background-color:#9400D3;
+}
+
+.clear
+{
+	clear:both;
+}
+
+#selectActionContainer
+{
+	margin-bottom:31px;
+	text-align: center;
+}
+
+select
+{
+	text-align:center;
+}
+
+option
+{
+	text-align:center;
+}
+
+.strategyTable
+{
+	display: inline-flex;
+	margin-right:17px;
+}
+
+tbody
+{
+	border: 1px solid black;
+}
+
+th
+{
+	padding:21px 0 10px;
+	margin-bottom: 21px;
+	border: 1px solid black;
+}
+
+td
+{
+	border:1px solid black;
+}
+
+td.label
+{
+	width:25px;
+	height:25px;
+	text-align:center;
+}
+
+/*The appearance of button which you can start the simulation with is defined here*/
+
+#simulationTrigger
+{
+	padding:30px;
+	margin-top:0px;
+	margin-bottom:10px;
+	background-color:red;
+	border-radius: 50px;
+	color:white;
+	font-weight:700;
+	font-size:21px;
+}
+
+#selectActionContainer p
+{
+	font-size:16px;
+}
+
+#simulationSettings ul
+{
+	list-style-type:none;
+	font-size:13px;
+	padding: 0;
+	margin: 0;
+}
+
+#simulationSettings li
+{
+	font-size:13px;
+	padding:5px;
+	border:1px solid black;
+}
+/* This is the popup div which is shown containing the results when the simulation is done */
+#simulatioinResults
+{
+	box-sizing:border-box;
+	display:none;
+	position:fixed;
+	z-index:99999999;
+	overflow:scroll;
+	background-color:#5F9EA0;
+	border: 1px solid black;
+	width:30%;
+	height:50%;
+	bottom:25%;
+	left:35%;
+	padding:2%;
+	text-align:left;
+}
+
+#simulatioinResults ul
+{
+	list-style-type:none;
+	text-align:left;
+
+}
+
+/* This is the button with wich the simulation result popup can be closed*/
+
+button#closeIt
+{
+	float:right;
+	margin:5px;
+}
